@@ -1,0 +1,11 @@
+<p>
+  home works!
+</p>
+
+<ul>   
+  <li *ngFor="let movie of movies">
+    <img [src]="movie.poster" width="100px" alt="">
+    <span>{{movie.title}}</span>
+    <button (click)="goDetails(movie.id)"> Details </button>
+  </li>
+</ul>

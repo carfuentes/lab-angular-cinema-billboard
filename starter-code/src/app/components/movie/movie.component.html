@@ -1,0 +1,15 @@
+<p>
+  movie works!
+</p>
+
+<img [src]="movie.poster" width="100px"alt=""><br>
+<span>{{movie.title}}</span><br>
+Actors: <ul>   
+  <li *ngFor="let actor of movie.actors">
+  {{actor}}
+  </li>
+</ul>
+
+<button routerLink="/home">Home</button>
+
+
